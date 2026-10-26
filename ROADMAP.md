@@ -4,16 +4,16 @@
 
 ## 核心路线
 
-1. [阶段一：AI / LLM 基础与结构化交互](stages/stage-01-llm-foundations.md)
-2. [阶段二：模型 API 与 TypeScript 后端](stages/stage-02-model-api-typescript-backend.md)
-3. [阶段三：RAG、检索与评估](stages/stage-03-rag-retrieval-evaluation.md)
-4. [阶段四：Tool Calling 与 Agent](stages/stage-04-tool-calling-agent.md)
-5. [阶段五：MCP](stages/stage-05-mcp.md)
-6. [阶段六：生产级 Agent 工程](stages/stage-06-production-agent-engineering.md)
+1. [阶段一：AI / LLM 基础与结构化交互](stages/stage-01-llm-foundations/README.md)
+2. [阶段二：模型 API 与 TypeScript 后端](stages/stage-02-model-api-typescript-backend/README.md)
+3. [阶段三：RAG、检索与评估](stages/stage-03-rag-retrieval-evaluation/README.md)
+4. [阶段四：Tool Calling 与 Agent](stages/stage-04-tool-calling-agent/README.md)
+5. [阶段五：MCP](stages/stage-05-mcp/README.md)
+6. [阶段六：生产级 Agent 工程](stages/stage-06-production-agent-engineering/README.md)
 
 ## 按需能力模块
 
-- [Python 按需补充模块](stages/python-on-demand.md)：不作为独立前置阶段；根据 RAG、数据处理和所选框架的实际需要补齐。建议初始预算约占总学习投入的 10%–15%，按需要上下调整。
+- [Python 按需补充模块](modules/python-on-demand.md)：不作为独立前置阶段；根据 RAG、数据处理和所选框架的实际需要补齐。建议初始预算约占总学习投入的 10%–15%，按需要上下调整。
 
 ## 推进规则
 
