@@ -1,4 +1,4 @@
-# Agent Start From Scratch
+# Agent Start From Frontend
 
 从 Web 前端工程师出发，系统学习 AI / LLM 与 Agent 工程，通过连续迭代的项目积累可验证的工程能力。
 
