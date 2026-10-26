@@ -26,7 +26,7 @@
 
 AI / LLM 基础与结构化交互 → 模型 API 与 TypeScript 后端 → RAG、检索与评估 → Tool Calling 与 Agent → MCP → 生产级 Agent 工程。
 
-Python 作为按需能力模块穿插在主线中，不作为必须先完成的独立阶段。初始预算约为总学习投入的 10%–15%，用于掌握 AI 应用开发需要的基础能力；这只是规划估算，不是硬性配额。遇到 Python 专属工具或框架时，按项目需要集中补齐。详见 [Python 按需补充模块](../stages/python-on-demand.md)。
+Python 作为按需能力模块穿插在主线中，不作为必须先完成的独立阶段。初始预算约为总学习投入的 10%–15%，用于掌握 AI 应用开发需要的基础能力；这只是规划估算，不是硬性配额。遇到 Python 专属工具或框架时，按项目需要集中补齐。详见 [Python 按需补充模块](../modules/python-on-demand.md)。
 
 ## 项目与评估原则
 
