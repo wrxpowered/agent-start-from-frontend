@@ -24,7 +24,7 @@
 | 2 | 模型 API 与 TypeScript 后端 | 有流式输出、错误处理和测试的 AI 应用 |
 | 3 | RAG、检索与评估 | 能引用证据、处理无答案并评估质量的知识库 |
 | 4 | Tool Calling 与 Agent | 能调用受控工具、管理状态并完成多步骤任务的售后 Agent |
-| 5 | MCP | 能接入已有 MCP Server 并开发一个受控的自定义 Server |
+| 5 | MCP（重要可选扩展） | 能理解 MCP 取舍并接入已有 Server；深入开发按项目需要决定 |
 | 6 | 生产级 Agent 工程 | 可评估、可观测、可部署、安全且可维护的项目 |
 
 Python 是贯穿主线的**按需能力模块**，不是必须先完成的阶段。优先学习语法、函数、列表/字典、类型标注、异常、虚拟环境、依赖管理、异步基础和测试；遇到 Python 生态工具时再补 Pydantic、FastAPI 等。暂不系统学习模型训练、深度学习数学或数据科学全套内容。详见 [Python 按需补充模块](modules/python-on-demand.md)。
@@ -50,6 +50,8 @@ Python 是贯穿主线的**按需能力模块**，不是必须先完成的阶段
 5. [阶段五：MCP](stages/stage-05-mcp/README.md)
 6. [阶段六：生产级 Agent 工程](stages/stage-06-production-agent-engineering/README.md)
 7. [可选能力模块：Python 按需补充](modules/python-on-demand.md)
+
+**阶段门槛说明：** 阶段一、二、四、六是主线必修；阶段三完成与当前项目相关的基础 RAG；阶段五 MCP 是重要可选扩展，不作为进入生产工程的硬性门槛。各阶段的必修、了解即可、后续再学与验收标准见 [路线设计依据、阶段取舍与目录组织说明](docs/roadmap-decisions.md)。
 
 ## 当前进度
 
@@ -83,6 +85,7 @@ Python 是贯穿主线的**按需能力模块**，不是必须先完成的阶段
 - [学习进度](PROGRESS.md)
 - [学习规则与工程原则](docs/learning-rules.md)
 - [面向初学者的学习方式](docs/beginner-friendly-learning.md)
+- [路线设计依据、阶段取舍与目录组织说明](docs/roadmap-decisions.md)
 - [阶段一笔记](stages/stage-01-llm-foundations/notes.md)
 - [路线索引（兼容入口）](ROADMAP.md)
 
