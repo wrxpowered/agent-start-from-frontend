@@ -21,7 +21,7 @@
 仓库采用以下组织方式：
 
 ```text
-agent-start-from-scratch/
+agent-start-from-frontend/
 ├── README.md                 # 项目总览、原则、阶段入口
 ├── ROADMAP.md                # 路线索引与推进规则
 ├── PROGRESS.md               # 全局实际进度、已完成练习和下一步
