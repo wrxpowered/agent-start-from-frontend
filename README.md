@@ -6,33 +6,39 @@
 
 逐步具备独立设计、开发、测试、部署和维护 AI / Agent 应用的能力。重点不只是调用模型或使用框架，而是理解系统机制、验证结果、处理失败、控制权限与成本，并交付可复现的项目。
 
-## 整体路线概要
+## 规划原则
+
+- **主线围绕工程成果，而非语言或框架清单。** 每个阶段都产出能运行、能测试、能解释的结果。
+- **先发挥 TypeScript 优势。** 用熟悉的语言学习模型 API、状态管理和 Agent 核心机制，避免一开始同时承担语言切换和 AI 概念两种负担。
+- **Python 按需补齐，不设强制独立阶段。** Python 专项投入的初始预算约为总学习投入的 10%–15%，不是硬性配额；在 RAG、数据处理或框架确有需要时集中补齐，避免为了完成语言课程而延迟项目实践。
+- **评估贯穿全程。** 从早期测试结构化输出开始，到 RAG 检索评估、Agent 任务成功率和生产观测，不能只以 Demo 能运行作为完成标准。
+- **从一个连续项目演进。** 以售后支持场景为主线，逐步加入模型 API、知识库、工具调用、MCP 和生产保障；可拆分子项目展示，但尽量复用前期成果。
+- **云端优先、轻量开发。** 不把本地运行大型模型作为前置条件。
+
+## 核心学习路线
 
 | 阶段 | 主题 | 主要成果 |
 |---|---|---|
-| 1 | AI / LLM 基础与结构化交互 | 可校验、有状态的多轮交互流程 |
-| 2 | 模型 API 与 TypeScript 后端 | 完整的 AI 对话应用 |
-| 3 | Python 工程基础 | 可调用、可测试的 Python 服务 |
-| 4 | RAG 与检索评估 | 有来源引用和质量评估的知识库问答 |
-| 5 | Tool Calling 与 Agent | 能执行多步骤任务的 Agent |
-| 6 | MCP | 能接入并开发 MCP Server |
-| 7 | 生产级 Agent 工程 | 可评估、可观测、可部署的工程产品 |
+| 1 | AI / LLM 基础与结构化交互 | 可校验、有状态的多轮售后交互原型 |
+| 2 | 模型 API 与 TypeScript 后端 | 有流式输出、错误处理和测试的 AI 应用 |
+| 3 | RAG、检索与评估 | 能引用证据、处理无答案并评估质量的知识库 |
+| 4 | Tool Calling 与 Agent | 能调用受控工具、管理状态并完成多步骤任务的售后 Agent |
+| 5 | MCP | 能接入已有 MCP Server 并开发一个受控的自定义 Server |
+| 6 | 生产级 Agent 工程 | 可评估、可观测、可部署、安全且可维护的项目 |
 
-路线采取“前端优势起步、逐步补齐后端、深入 AI 工程、强化生产能力”的方式。先使用 TypeScript / Node.js 构建 AI 应用，再系统学习 Python；先手动理解 Tool Calling 与 Agent 的核心机制，再按需求引入框架。
-
-各阶段可以按项目需要交叉补充，但是否进入下一阶段，以当前阶段的理解、实践和验收结果为准。
+Python 是贯穿主线的**按需能力模块**，不是必须先完成的阶段。优先学习语法、函数、列表/字典、类型标注、异常、虚拟环境、依赖管理、异步基础和测试；遇到 Python 生态工具时再补 Pydantic、FastAPI 等。暂不系统学习模型训练、深度学习数学或数据科学全套内容。详见 [Python 按需补充模块](stages/python-on-demand.md)。
 
 ## 阶段规划
 
-日常学习只需聚焦当前阶段的文件；本 README 用于查看全局路线。
+日常学习聚焦当前阶段文件；本 README 用于查看全局路线。
 
 1. [阶段一：AI / LLM 基础与结构化交互](stages/stage-01-llm-foundations.md)
 2. [阶段二：模型 API 与 TypeScript 后端](stages/stage-02-model-api-typescript-backend.md)
-3. [阶段三：Python 工程基础](stages/stage-03-python-engineering.md)
-4. [阶段四：RAG 与检索评估](stages/stage-04-rag-retrieval-evaluation.md)
-5. [阶段五：Tool Calling 与 Agent](stages/stage-05-tool-calling-agent.md)
-6. [阶段六：MCP](stages/stage-06-mcp.md)
-7. [阶段七：生产级 Agent 工程](stages/stage-07-production-agent-engineering.md)
+3. [阶段三：RAG、检索与评估](stages/stage-03-rag-retrieval-evaluation.md)
+4. [阶段四：Tool Calling 与 Agent](stages/stage-04-tool-calling-agent.md)
+5. [阶段五：MCP](stages/stage-05-mcp.md)
+6. [阶段六：生产级 Agent 工程](stages/stage-06-production-agent-engineering.md)
+7. [可选能力模块：Python 按需补充](stages/python-on-demand.md)
 
 ## 当前进度
 
@@ -50,10 +56,15 @@
 ## 工程与工具原则
 
 - 优先使用云端模型/API，不把本地运行大型模型作为前置条件。
-- 先理解底层机制，再选择适合项目的 SDK 或框架。
+- 先手动理解核心机制，再按需求选择 SDK 或框架。
 - 模型输出视为需要校验的数据；可信业务事实与最终执行由后端负责。
 - 对缺失信息、异常输出、工具失败和高风险操作设计明确的控制流程。
-- 项目以可运行、可测试、可解释和可复现为目标。
+- 从早期就积累测试用例；RAG、Agent 和生产项目逐步增加质量评估、日志与追踪。
+- 优先将一个项目持续迭代为作品集，强调工程深度、可解释性和可复现性。
+
+## 外部路线参考与吸收原则
+
+本路线参考过开源 AI 工程路线和课程的组织方式，吸收以下实践：以交付物和阶段验收推进；把评估、可观测性、安全和系统设计纳入主线；Agent 学习包含工具调用、状态、停止条件、人工确认和最终测试。不会直接照搬大型路线中的全部主题，也不会把多框架学习、模型训练或 Kubernetes 等内容设为当前必修。
 
 ## 文档导航
 
