@@ -27,7 +27,7 @@
 | 5 | MCP | 能接入已有 MCP Server 并开发一个受控的自定义 Server |
 | 6 | 生产级 Agent 工程 | 可评估、可观测、可部署、安全且可维护的项目 |
 
-Python 是贯穿主线的**按需能力模块**，不是必须先完成的阶段。优先学习语法、函数、列表/字典、类型标注、异常、虚拟环境、依赖管理、异步基础和测试；遇到 Python 生态工具时再补 Pydantic、FastAPI 等。暂不系统学习模型训练、深度学习数学或数据科学全套内容。详见 [Python 按需补充模块](stages/python-on-demand.md)。
+Python 是贯穿主线的**按需能力模块**，不是必须先完成的阶段。优先学习语法、函数、列表/字典、类型标注、异常、虚拟环境、依赖管理、异步基础和测试；遇到 Python 生态工具时再补 Pydantic、FastAPI 等。暂不系统学习模型训练、深度学习数学或数据科学全套内容。详见 [Python 按需补充模块](modules/python-on-demand.md)。
 
 ## 面向初学者的讲解方式
 
@@ -43,13 +43,13 @@ Python 是贯穿主线的**按需能力模块**，不是必须先完成的阶段
 
 日常学习聚焦当前阶段文件；本 README 用于查看全局路线。
 
-1. [阶段一：AI / LLM 基础与结构化交互](stages/stage-01-llm-foundations.md)
-2. [阶段二：模型 API 与 TypeScript 后端](stages/stage-02-model-api-typescript-backend.md)
-3. [阶段三：RAG、检索与评估](stages/stage-03-rag-retrieval-evaluation.md)
-4. [阶段四：Tool Calling 与 Agent](stages/stage-04-tool-calling-agent.md)
-5. [阶段五：MCP](stages/stage-05-mcp.md)
-6. [阶段六：生产级 Agent 工程](stages/stage-06-production-agent-engineering.md)
-7. [可选能力模块：Python 按需补充](stages/python-on-demand.md)
+1. [阶段一：AI / LLM 基础与结构化交互](stages/stage-01-llm-foundations/README.md)
+2. [阶段二：模型 API 与 TypeScript 后端](stages/stage-02-model-api-typescript-backend/README.md)
+3. [阶段三：RAG、检索与评估](stages/stage-03-rag-retrieval-evaluation/README.md)
+4. [阶段四：Tool Calling 与 Agent](stages/stage-04-tool-calling-agent/README.md)
+5. [阶段五：MCP](stages/stage-05-mcp/README.md)
+6. [阶段六：生产级 Agent 工程](stages/stage-06-production-agent-engineering/README.md)
+7. [可选能力模块：Python 按需补充](modules/python-on-demand.md)
 
 ## 当前进度
 
@@ -83,5 +83,12 @@ Python 是贯穿主线的**按需能力模块**，不是必须先完成的阶段
 - [学习进度](PROGRESS.md)
 - [学习规则与工程原则](docs/learning-rules.md)
 - [面向初学者的学习方式](docs/beginner-friendly-learning.md)
-- [AI / LLM 基础笔记](notes/llm-foundations.md)
+- [阶段一笔记](stages/stage-01-llm-foundations/notes.md)
 - [路线索引（兼容入口）](ROADMAP.md)
+
+## 目录组织原则
+
+- `stages/stage-xx-*/`：每个阶段独立成目录，阶段说明、笔记、练习和总结都放在对应目录中。
+- `modules/`：存放贯穿多个阶段、按需补充的辅助能力模块，例如 Python。
+- `docs/`：存放适用于整个学习项目的通用规则与指南。
+- `PROGRESS.md`：记录全局学习进度；具体阶段材料归属各自阶段目录。
