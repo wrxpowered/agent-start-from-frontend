@@ -86,7 +86,8 @@ Python 是贯穿主线的**按需能力模块**，不是必须先完成的阶段
 - [学习规则与工程原则](docs/learning-rules.md)
 - [学习方式说明](docs/beginner-friendly-learning.md)
 - [路线设计依据、阶段取舍与目录组织说明](docs/roadmap-decisions.md)
-- [阶段一笔记](stages/stage-01-llm-foundations/notes.md)
+- [阶段一学习资料索引](stages/stage-01-llm-foundations/notes.md)
+- [单元 1 完整课程正文](stages/stage-01-llm-foundations/unit-01-llm-and-reliable-interaction.md)
 - [路线索引（兼容入口）](ROADMAP.md)
 
 ## 目录组织原则
